@@ -1,0 +1,150 @@
+<!-- <div class="row">
+    <div class="col-md-2">
+        <div class="noneblock mt-1">
+            <div class="adblock" (click)="noneBlock()">
+                None
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="5050block mt-1">
+            <div class="adblock" (click)="_5050Block()">
+                50 X 50
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="6040block mt-1">
+            <div class="adblock" (click)="_6040Block()">
+                60 X 40
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="4060block mt-1">
+            <div class="adblock" (click)="_4060Block()">
+                40 X 60
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="333block mt-1">
+            <div class="adblock" (click)="_333333Block()">
+                33 X 33 X 33
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="row-block">
+    <div class="column-block">
+        <app-fileupload [label]="'None'" [imageRatio]="'Banner'" [contentId]="contentId" (imagePath)="setImagePath($event)"></app-fileupload>
+    </div>
+    <div class="column-block">
+        <app-fileupload [label]="'50'" [imageRatio]="'50_50_1'" [contentId]="contentId"></app-fileupload> <app-fileupload [label]="'50'" [imageRatio]="'50_50_2'" [contentId]="contentId"></app-fileupload>
+    </div>
+    <div class="column-block">
+        <app-fileupload [label]="'60'" [imageRatio]="'60_40_1'" [contentId]="contentId"></app-fileupload> <app-fileupload [label]="'40'" [imageRatio]="'60_40_2'" [contentId]="contentId"></app-fileupload>
+    </div>
+    <div class="column-block">
+        <app-fileupload [label]="'40'" [imageRatio]="'40_60_1'" [contentId]="contentId"></app-fileupload><app-fileupload [label]="'60'" [imageRatio]="'40_60_2'" [contentId]="contentId"></app-fileupload>
+    </div>
+    <div class="column-block">
+        <app-fileupload [label]="'33'" [imageRatio]="'33_33_1'" [contentId]="contentId"></app-fileupload> <app-fileupload [label]="'33'" [imageRatio]="'33_33_2'" [contentId]="contentId"></app-fileupload> <app-fileupload [label]="'33'" [imageRatio]="'33_33_3'" [contentId]="contentId"></app-fileupload>
+    </div>
+</div>
+<br>
+<div class="row"  style="float: left;" *ngIf="imageUploaded">
+    <div class="col-md-6">
+    <h2>Preview</h2>
+    <img [src]="imagePath" />
+    </div>
+</div>
+
+<!-- <div class="row">
+    <ng-container *ngIf="this.noneVisible == true; then noneTemplate;">
+
+    </ng-container>
+    <ng-template #noneTemplate>
+        <div class="col-8" id="myDIV">
+            <div class="adblock-carea card">
+                <div class="row">
+
+                    <div class="col-md-3 img-upload bg-white">
+                        <input type="hidden" id="nameFormat" name="nameFormat" value='_1' />
+                        <input type="file" id="selectFile" name="selectFile" />
+                        <input type="submit" class="btn btn-primary" value="Upload" (click)="onSelected()">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </ng-template>
+
+    <ng-container *ngIf=" this._5050Visible==true; then _5050Template; ">
+
+    </ng-container>
+    <ng-template #_5050Template>
+        <div class="col-8 " id="myDIV ">
+            <div class="adblock-carea card ">
+                <div class="row ">
+
+                    <div class="col-md-3 img-upload bg-white ">
+                        <p>534</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </ng-template>
+
+    <ng-container *ngIf="this._6040Visible==true; then _6040Template; ">
+
+    </ng-container>
+    <ng-template #_6040Template>
+        <div class="col-8 " id="myDIV ">
+            <div class="adblock-carea card ">
+                <div class="row ">
+
+                    <div class="col-md-3 img-upload bg-white ">
+                        <p>06</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </ng-template>
+
+    <ng-container *ngIf="this._4060Visible==true; then _4060Template; ">
+
+    </ng-container>
+    <ng-template #_4060Template>
+        <div class="col-8 " id="myDIV ">
+            <div class="adblock-carea card ">
+                <div class="row ">
+
+                    <div class="col-md-3 img-upload bg-white ">
+                        <p>4060</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </ng-template>
+
+    <ng-container *ngIf="this._333Visible==true; then _333Template; ">
+
+    </ng-container>
+    <ng-template #_333Template>
+        <div class="col-8 " id="myDIV ">
+            <div class="adblock-carea card ">
+                <div class="row ">
+
+                    <div class="col-md-3 img-upload bg-white ">
+                        <p>333</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</div> -->

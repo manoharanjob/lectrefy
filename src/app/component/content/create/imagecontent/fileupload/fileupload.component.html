@@ -1,0 +1,5 @@
+<span>
+    <input type="hidden" id="imageName" name="imageName" [value]="imageRatio" />
+    <input type="button" id="label" class="btn btn-primary" [value]="label" (click)="clickUpload()">
+    <input type="file" name="file" id="fileUpload" accept="{{accept}}" style="display:none;" (change)="uploadFile()" />
+</span>

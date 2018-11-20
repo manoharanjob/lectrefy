@@ -1,0 +1,21 @@
+<!--<div class="alert alert-info">
+    "email":"manikatti90@gmail.com"<br /> "password": "Mani$123"
+</div>-->
+<!-- {{loginForm.value | json }} -->
+<div class="col-12 col-sm-8 col-md-4 mx-auto d-block  shadow-lg mb-50 bg-white" style="margin-top:10%; padding:3%">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <h3 class="text-center">Login</h3>
+        <div style="padding:8% 2%;">
+
+            <div class="form-group">
+                <label for="exampleInputuser">E-mail</label>
+                <input type="text" class="form-control" id="exampleInputuser" formControlName="username" aria-describedby="emailHelp" placeholder="Enter E-mail" />
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password" placeholder="Password" />
+            </div>
+            <button type="submit" class="mx-auto d-block btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>

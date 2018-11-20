@@ -1,0 +1,44 @@
+<!-- Main content -->
+<div class="main-content">
+    <!-- Top navbar -->
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+        <div class="container-fluid">
+            <!-- Brand -->
+            <a class="h2 mb-0 d-none d-lg-inline-block">
+                <i class="fas fa-arrow-left"></i>
+                Set Content
+            </a>
+            
+        </div>
+    </nav>
+    <!-- Header -->
+    <div class="pb-8 pt-5 pt-md-8">
+        <!-- Page content -->
+        <div class="container-fluid mt--7">      
+            <div class="row mt-5">
+                <div class="col-xl-12 mb-5 mb-xl-0">
+                    <!-- CREATE FORM STARTS -->
+                    <form [formGroup]="mapContent" name="create-form" id="create-form" (ngSubmit)="onSubmit()">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="content">Content</label>
+                                    <select class="form-control form-control-alternative" id="content" formControlName="content" (change)="setContent($event.target.value)">
+                                        <option>-Select-</option>
+                                        <option *ngFor='let content of contents' [value]="content.contentId">{{content.title}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <button class="btn btn-primary d-none d-lg-block" type="submit">Map</button>
+                    </form>
+                    <!-- FORM END -->
+                    
+              </div>              
+          </div>
+          <!-- Footer -->
+          
+      </div>
+  </div>
+</div>

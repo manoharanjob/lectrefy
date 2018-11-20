@@ -1,0 +1,64 @@
+.pad0 {
+    padding: 0;
+}
+
+.pad80 {
+    padding: 8% 0;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.adblock {
+    padding: 10% 0%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    background: #E0E0E0;
+    color: #303030;
+}
+
+.adblock-carea {
+    padding: 2%;
+    margin: 0% 1%;
+    height: 300px;
+    background: #E0E0E0;
+    overflow: hidden;
+}
+
+.preview-img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.none-size {
+    width: 700px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.none-size50 {
+    width: 100%;
+    height: 300px!important;
+    overflow: hidden;
+}
+
+.none-size50 img {
+    height: 300px!important;
+}
+
+.row-block {
+    width: 100%;
+    /*margin: 0 auto;*/
+    /* text-align: center; */
+    float: left;
+}
+.column-block {
+    background:#8898aa;;
+    padding: 20px 25px 20px 25px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
